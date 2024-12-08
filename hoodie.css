@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a3c6d4;
+    padding: 10px 20px;
+    border-bottom: 2px solid #2c3e50;
+}
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+.navbar .menu span {
+    font-size: 18px;
+    color: #5a6e73;
+    margin-left: 10px; /* Adjusted for spacing */
+}
+.navbar .title {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar .icons {
+    display: flex;
+    align-items: center;
+}
+.navbar .icons i {
+    font-size: 24px;
+    color: #5a6e73;
+    margin-left: 20px;
+}
+.secondary-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.secondary-navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 14px;
+}
+.secondary-navbar a:hover {
+    color: #0071e3;
+}
+.secondary-navbar .icons {
+    display: flex;
+    align-items: center;
+}
+.secondary-navbar .icons a {
+    margin: 0 10px;
+}
+.secondary-navbar .icons a i {
+    font-size: 18px;
+}
+.burger {
+    position: relative;
+    width: 24px; 
+    height: 18px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+.burger input {
+    display: none;
+}
+.burger span {
+    display: block;
+    position: absolute;
+    height: 2px; 
+    width: 100%;
+    background: black;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+.burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 3px;
+}
+.burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+.burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 14px; 
+    left: 3px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 4px 5px;
+    background-color: #21262C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #2F81F7;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.text {
+    color: #f0f0f0;
+    font-size: 16px;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.new-dropout-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product {
+    max-width: 200px;
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+.discount {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.new-arrivals-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.new-arrivals-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.new-arrivals-product {
+    width: 18%;
+    margin: 10px 0;
+}
+.new-arrivals-product img {
+    width: 100%;
+    height: auto;
+}
+.new-arrivals-product-title {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+.new-arrivals-product-price {
+    font-size: 14px;
+    color: #666;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.navigation i {
+    font-size: 24px;
+    cursor: pointer;
+}
+.shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .new-arrivals-product {
+        width: 45%;
+    }
+}
+@media (max-width: 480px) {
+    .new-arrivals-product {
+        width: 100%;
+    }
+}

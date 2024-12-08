@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Hustling</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <label class="burger" for="burger">
+            </label>
+        </div>
+        <div class="title">Pawan Rai</div>
+        <div class="icons">
+            <a href="login.html"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </div>
+    <div class="secondary-navbar">
+        <a href="onlyHoodie.html">Hoodie</a>
+        <a href="#">T-Shirt</a>
+        <a href="#">Sweatshirt</a>
+        <a href="#">Baby's Clothes</a>
+        <a href="#">Phone Cover</a>
+        <a href="#">Paper Poster</a>
+        <a href="#">Frame</a>
+        <a href="#">Stickers</a>
+        <a href="#">Hat</a>
+        <a href="#">Mug</a>
+        <a href="#">Cuffed Beanie</a>
+        <div class="icons"></div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .product-image {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+    }
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .product-details {
+      flex: 1;
+      padding: 20px;
+    }
+    .product-details h2 {
+      font-size: 24px;
+      font-weight: normal;
+      margin: 0 0 10px;
+    }
+    .product-details .price {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .product-details .options {
+      margin: 20px 0;
+    }
+    .product-details .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .product-details .options select,
+    .product-details .options input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .product-details .quantity {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product-details .quantity input {
+      width: 50px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 0 10px;
+    }
+    .quantity span {
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .product-details .buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .product-details .add-to-cart,
+    .product-details .add-to-bag {
+      background-color: #000;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .product-details .add-to-bag {
+      background-color: #1c1c1c;
+    }
+    .product-details .description,
+    .product-details .features {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+    textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    button {
+      display: flex;
+      height: 3em;
+      width: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #eeeeee4b;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      border: none;
+      background: #fff;
+    }
+    button > svg {
+      margin-right: 5px;
+      margin-left: 5px;
+      font-size: 20px;
+      transition: all 0.4s ease-in;
+    }
+    button:hover > svg {
+      font-size: 1.2em;
+      transform: translateX(-5px);
+    }
+    button:hover {
+      box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+      transform: translateY(-2px);
+    }
+    button {
+      background-color: black;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    button span {
+      color: white;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .quantity input {
+      width: 50px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 0 10px;
+    }
+    .quantity span {
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+    /* Header styles */
+    .header {
+      background-color: #a3c7d4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 2px solid #4a4a4a;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    .menu i {
+      margin-right: 10px;
+    }
+    .menu span {
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+    .title {
+      font-size: 24px;
+      color: #ffffff;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+    .icons i {
+      font-size: 24px;
+      color: #4a4a4a;
+      margin-left: 20px;
+    }
+    .icons .cart {
+      position: relative;
+    }
+    .icons .cart::after {
+      content: attr(data-count);
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: #4a4a4a;
+      color: #ffffff;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="product-image">
+      <img src="unisex-premium-hoodie-team-red-front-67211c63ec304(1).jpg" alt="Purple T-shirt with 'Good Vibes' text and a beach scene illustration" />
+    </div>
+    <div class="product-details">
+      <a href="index.html">
+        <button onclick="Aesthetic.html">
+          <span>Back</span>
+        </button>
+      </a>
+      <h2>Aesthetic T-shirt</h2>
+      <div class="price">$33.00 USD</div>
+      <div class="options">
+        <label for="color">Color</label>
+        <select id="color">
+          <option>Red</option>
+        </select>
+        <label for="size">Size</label>
+        <select id="size">
+          <option>S</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button class="add-to-cart">Buy Now</button>
+        <button class="add-to-bag" onclick="addToBag()">Add to Bag</button>
+      </div>
+      <div class="description">
+        A stylish unisex T-shirt made with premium fabric for ultimate comfort. Perfect for casual outings.
+      </div>
+      <div class="features">
+        <form action="https://formspree.io/f/mgvezyao" method="POST">
+          <textarea name="feedback" placeholder="Write your feedback or notes here." rows="7"></textarea>
+          <button type="submit">
+            <span>Submit Feedback</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
